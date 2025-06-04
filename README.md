@@ -45,12 +45,6 @@ npm start
     - The ASCII art will appear in the main window.
     - Copy or export the ASCII result if you wish.
 
-2. **Text to ASCII:**
-    - Select the "Text" tab or area.
-    - Type your text in the input box.
-    - Choose a style/font if available.
-    - The ASCII banner will display instantly.
-    - Copy or export as needed.
 
 ## Project Structure
 
