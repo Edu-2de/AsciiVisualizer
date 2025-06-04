@@ -7,5 +7,8 @@
   },
   "devDependencies": {
     "electron": "^29.0.0"
+  },
+  "dependencies": {
+    "figlet": "^1.8.1"
   }
 }
