@@ -9,6 +9,7 @@
     "electron": "^29.0.0"
   },
   "dependencies": {
-    "figlet": "^1.8.1"
+    "figlet": "^1.8.1",
+    "jimp": "^0.22.10"
   }
 }
