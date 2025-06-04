@@ -7,7 +7,7 @@
     body { font-family: monospace; background: #191919; color: #ededed; text-align: center; margin-top: 60px; }
     h1 { font-size: 2.5em; letter-spacing: 2px; }
     .subtitle { margin-bottom: 30px; color: #9acd32; }
-    #ascii-output { 
+    #ascii-image-output { 
       white-space: pre; 
       background: #222; 
       color: #9acd32; 
@@ -15,40 +15,27 @@
       padding: 20px 30px; 
       margin-top: 30px; 
       border-radius: 8px;
-      font-size: 1em;
+      font-size: 10px;
       min-height: 80px;
+      max-width: 95vw;
+      overflow-x: auto;
+      text-align: left;
     }
-    #user-text { 
-      width: 400px; 
-      font-size: 1.2em; 
-      padding: 6px 10px; 
-      border-radius: 4px; 
-      border: 1px solid #555; 
-      background: #222; 
-      color: #ededed;
+    #image-upload {
+      margin-top: 20px;
       margin-bottom: 10px;
     }
-    #generate-btn {
-      padding: 7px 20px;
-      font-size: 1.1em;
-      border-radius: 4px;
-      background: #9acd32;
-      color: #222;
-      border: none;
-      cursor: pointer;
-      margin-left: 10px;
-    }
-    #generate-btn:hover {
-      background: #b5e275;
+    .help {
+      color: #888; font-size: 0.95em; margin-top: 0;
     }
   </style>
 </head>
 <body>
   <h1>asciiVisualizer</h1>
-  <div class="subtitle">Text to ASCII Art</div>
-  <input type="text" id="user-text" placeholder="Type your text here" maxlength="30" />
-  <button id="generate-btn">Generate ASCII</button>
-  <div id="ascii-output">Your ASCII art will appear here.</div>
+  <div class="subtitle">Image to ASCII Art</div>
+  <input type="file" id="image-upload" accept="image/png, image/jpeg" />
+  <div class="help">Choose a PNG or JPG image (small images work best)</div>
+  <div id="ascii-image-output">Your ASCII art from image will appear here.</div>
   <script src="renderer.js"></script>
 </body>
 </html>
